@@ -1,0 +1,38 @@
+body {
+    background-color: lightslategrey;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    border: 2px solid indigo;
+    margin: 20px;
+    border-radius: 9999999999px;
+}
+
+.box-1 {
+    background-color: lawngreen;
+}
+
+.box-2 {
+    background: radial-gradient(
+        circle at 25% 25%, 
+        rgba(96,39,255,1) 10%, 
+        rgba(129,255,0,1) 100%);
+    /* background-color: lemonchiffon; */
+
+}
+
+.box-3 {
+    background: linear-gradient(
+        90deg, 
+        rgb(0, 228, 255) 0%, 
+        rgb(255, 235, 118) 51%,
+        rgb(169, 109, 254) 100%);
+    /* background-color: lightsalmon; */
+
+}
+
+.box-4 {
+    background-color: lightseagreen;
+}
