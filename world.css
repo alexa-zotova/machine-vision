@@ -1,0 +1,52 @@
+html {
+    cursor: url(cross_cursor.png) 32.3 32.3, default;
+}
+
+body {
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+}
+
+.top {
+    position: fixed;
+    z-index: 30;
+}
+
+.bottom {
+    position: fixed;
+    bottom: 0;
+    z-index: 31;
+}
+
+.button-next-redo {
+    position: fixed;
+    bottom: 0;
+    z-index: 100;
+}
+
+.placeholder {
+    position: absolute;
+    width: 1500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.children {
+    position: relative;
+    display: flex;
+    max-width:1920px;
+    margin: 0 auto;
+    justify-content: center;
+}
+.rout {
+    z-index: 15;
+}
+.dragon {
+    position: relative;
+    top: -1700px;
+}
