@@ -1,13 +1,13 @@
 const canvas = document.querySelector("canvas");
 canvas.width = 1920 ;
-canvas.height = 6000;
+canvas.height = 5000;
 
 const ctx = canvas.getContext("2d");
 
 const img = document.createElement("img");
 img.src = "dots_n_bunny.png";
-let imgW = img.width / 2;
-let imgH = img.height / 2;
+let imgW = img.width / 6;
+let imgH = img.height / 6;
 
 let currentX = null;
 let currentY = null;
@@ -28,7 +28,7 @@ document.addEventListener('mousemove', function(e) {
 });
 
 function draw() {
-    ctx.drawImage(img, currentX - imgW/2 , currentY - imgH/2, 421.0702, 600);
+    ctx.drawImage(img, currentX - imgW / 2 , currentY - imgH / 2, 421.0702, 600);
     currentX = currentX + (aimX - currentX) * 0.1;
     currentY = currentY + (aimY - currentY) * 0.1;
 
