@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS grid</title>
+    <link rel="stylesheet" href="grid-styles.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .parent {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: repeat(6, 1fr);
+            grid-column-gap: 10px;
+            grid-row-gap: 10px;
+            width: 100vw;
+            height: 100vh;
+
+        }
+
+            .div1 { grid-area: 1 / 2 / 3 / 3; }
+            .div2 { grid-area: 3 / 3 / 4 / 5; }
+            .div3 { grid-area: 4 / 7 / 5 / 8; }
+            .div4 { grid-area: 2 / 8 / 3 / 10; }
+            .div5 { grid-area: 3 / 10 / 4 / 12; }
+            .div6 { grid-area: 5 / 10 / 7 / 11; }
+            .div7 { grid-area: 5 / 3 / 6 / 5; }
+            .div8 { grid-area: 1 / 5 / 2 / 7; }
+            .div9 { grid-area: 2 / 3 / 2 / 6 ;}
+
+        .child {
+            border: 1px dashed palevioletred;
+            background: aquamarine;
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <button id="clown-btn">add clown circle</button>
+
+    <button id="fancy-btn">add fancy rect</button>
+
+    <button id="rect-btn">add random colored rect</button>
+
+    <button id="delete-body">delete body</button>
+
+    <button id="toggle-btn">toggle blue violet</button>
+
+    <button id="delete-clown-circle">delete-clown-circle</button>
+
+    <div class="clown-box">
+        <div class="clown-circle"></div>
+        <div class="clown-circle"></div>
+        <div class="clown-circle"></div>
+        <div class="clown-circle"></div>
+    </div>
+
+    <button id="pink-btn">make bg pink now!</button>
+
+    <div class="parent">
+        <div class="div1 child"> </div>
+        <div class="div2 child"> </div>
+        <div class="div3 child"> </div>
+        <div class="div4 child"> </div>
+        <div class="div5 child"> </div>
+        <div class="div6 child"> </div>
+        <div class="div7 child"> </div>
+        <div class="div8 child"> </div>
+        <div class="div9 child"> </div>
+    </div>  
+    <script src="grid-scripts.js"></script>
+</body>
+</html>

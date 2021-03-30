@@ -1,0 +1,40 @@
+.clown-circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 999999px;
+    background: conic-gradient(red, yellow, lime, aqua, blue, magenta, red);
+}
+
+.clown-box {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 200px;
+
+}
+
+.pink-btn {
+    position: fixed;
+    left: 10px;
+    top: 10px;
+}
+
+body {
+    transition: background 0.3 ease;
+}
+
+.blue-bg {
+    background: blueviolet;
+}
+
+.rounded-rect {
+    width: 200;
+    height: 100;
+    border-radius: 10px;
+    border: none;
+}
+
+.fancy-rect {
+    width: 150px;
+    height: 500px;
+}

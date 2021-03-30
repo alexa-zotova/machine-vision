@@ -1,0 +1,67 @@
+body {
+    min-height: 400vh
+}
+
+.box {
+    width: 250px;
+    height: 250px;
+    border: 3px dashed blueviolet;
+    border-radius: 40px;
+    text-align: center;
+    padding: 20px
+}
+
+.fixed-box {
+    position: fixed;
+    left: 20px;
+    top: 20px;
+}
+
+.sticky-box {
+    position: sticky;
+    top: 40px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid chartreuse;
+    margin-bottom: 40px;
+}
+
+.placeholder {
+    height: 300vh;
+    background: linear-gradient(red, green);
+}
+
+.relative-parent {
+    height: 200px;
+    border: 2px solid blue;
+    position: relative;
+}
+
+.relative-parent:hover .absolute-child {
+    background: cornflowerblue;
+}
+
+.absolute-child {
+    width: 50px;
+    height: 50px;
+    border-radius: 999999px;
+    background: radial-gradient(
+        circle at 25% 25%, 
+        rgba(96,39,255,1) 10%, 
+        rgba(129,255,0,1) 100%);
+    transition: background 0.5s cubic-bezier(1,0,1,.36);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.absolute-child:hover {
+    background: radial-gradient(
+        circle at 50% 50%, 
+        rgba(96,39,255,1) 10%, 
+        rgba(129,255,0,1) 100%);
+
+
+    
+}
