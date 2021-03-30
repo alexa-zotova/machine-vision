@@ -4,10 +4,16 @@ html {
 
 body {
     max-width: 1920px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 0 auto;
+    margin-right: 0 auto;
     padding: 0;
     padding-bottom: 254.6307px ;
+}
+
+canvas {
+    background-image: url(3_apply_technology/1x/technology__.png);
+    width: 1920px;
+    height: 4104px;
 }
 
 .top {
