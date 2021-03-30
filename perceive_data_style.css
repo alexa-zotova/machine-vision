@@ -51,7 +51,7 @@ body {
 .layer_1 {
     display: flex;
     position: relative;
-    top: -500px;
+    /* top: -500px; */
 }
 
 .suns_image {
