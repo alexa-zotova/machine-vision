@@ -11,7 +11,7 @@ body {
 }
 
 canvas {
-    background-image: url(3_apply_technology/1x/technology__.png);
+    background-image: url("technology__.png");
     width: 1920px;
     height: 4104 px;
 }
