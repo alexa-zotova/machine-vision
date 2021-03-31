@@ -4,8 +4,8 @@ html {
 
 body {
     max-width: 1920px;
-    margin-left: 0 auto;
-    margin-right: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     padding: 0;
 }
 
